@@ -21,7 +21,7 @@ const ReviewPage = () => {
   }, []);
 
   async function reviewCode() {
-    const response = await axios.post("http://localhost:8080/ai/get-review", {
+    const response = await axios.post("https://ai-powered-code-reviewer-2rcq.onrender.com", {
       code,
     });
     setReview(response.data);
